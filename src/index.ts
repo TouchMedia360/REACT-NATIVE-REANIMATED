@@ -1,3 +1,5 @@
+global.__reanimatedWorkletInit = () => { };
+
 import * as Animated from './Animated';
 import webGlobalIsInitialized from './reanimated2/js-reanimated/global';
 if (!webGlobalIsInitialized) {
