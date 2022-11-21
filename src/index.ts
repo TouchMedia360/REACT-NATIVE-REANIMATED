@@ -1,3 +1,10 @@
+
+/* eslint-disable no-var */
+declare global {
+/*  ↓↓↓ "var" is important  */  
+  var __reanimatedWorkletInit: CallableFunction;
+}
+/* eslint-enable no-var */
 global.__reanimatedWorkletInit = () => { };
 
 import * as Animated from './Animated';
