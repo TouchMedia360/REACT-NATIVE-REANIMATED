@@ -1,11 +1,6 @@
-
-/* eslint-disable no-var */
-declare global {
-/*  ↓↓↓ "var" is important  */  
-  var __reanimatedWorkletInit: CallableFunction;
-}
-/* eslint-enable no-var */
-global.__reanimatedWorkletInit = () => { };
+function nothing() {}
+const _global = global as any;
+_global.__reanimatedWorkletInit = nothing;
 
 import * as Animated from './Animated';
 import webGlobalIsInitialized from './reanimated2/js-reanimated/global';
